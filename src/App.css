@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #05292E;
+}
+
+.header-container{
+  width: 100%;
+  position: relative;
+}
+
+.banner-header{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.search-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-container input{
+  background-color: #FBFBFB;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  color: #000;
+  width: 130px;
+}
+
+input:hover{
+  box-shadow: #52b7886d 5px 5px, #52b78855 10px 10px, #52b7883e 15px 15px, #52b78825 20px 20px, #52b7881c 25px 25px;
+  transition: box-shadow .75s;
+}
+
+.search-container button{
+  background-color: #FBFBFB;
+  border: none;
+  margin-left: .25rem;
+  border-radius: 2px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: #52b7886d 5px 5px, #52b78855 10px 10px, #52b7883e 15px 15px, #52b78825 20px 20px, #52b7881c 25px 25px;
+  transition: box-shadow .75s;
+}
+
+.planet-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: .5rem;
+  align-items: center;
+  background-color: #062226;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffff;
+  max-width: 1200px;
+}
+
+.planet-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.planet-data > h2{
+  font-size: 12px;
+}
+
+.planet-data > p{
+  font-size: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin-top: 1.5rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.character-card{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  background-color: #062226;
+  width: 100%;
+  padding-bottom: .5rem;
+  height: 100%;
+  border-radius: 0px 0px 4px 4px;
+  position: relative;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.character-card:hover{
+  box-shadow: rgba(44, 50, 53, 0.12) 0px 2px 4px 0px, rgba(88, 109, 119, 0.32) 0px 2px 16px 0px;
+}
+
+.character-card img{
+  width: 100%;
+  padding-bottom: 1rem;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.character-card li{
+  border-bottom: 2px outset #FBFBFB;
+  padding: 0 .5rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FBFBFB;
+  margin-bottom: .25rem;
+}
+
+.character-card b, p{
+  padding: 0 .5rem;
+  font-weight: 700;
+}
+
+.character-card b{
+  font-size: 14px;
+  color: #7E7E7E;
+}
+
+.character-card p{
+  font-size: 16px;
+  color: #FBFBFB;
+  padding-bottom: .25rem;
+}
+
+.status-container{
+  position: absolute;
+  top: 20px;
+  background-color: #062226;
+  border-radius: 0px 12px 12px 0px;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 576px){
+  .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-container input{
+    width: 160px;
+    font-size: 15px;
+  }
+
+  .search-container button{
+    width: 75px;
+    font-size: 15px;
+  }
+
+  .planet-card h1{
+    font-size: 34px;
+  }
+
+  .planet-data > h2{
+    font-size: 16px;
+  }
+  
+  .planet-data > p{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 792px){
+  .grid-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .search-container input{
+    width: 175px;
+    font-size: 18px;
+  }
+
+  .search-container button{
+    width: 85px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px){
+  .grid-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .search-container input{
+    width: 250px;
+    font-size: 24px;
+  }
+
+  .search-container button{
+    width: 105px;
+    font-size: 24px;
+  }
+
+  .planet-card h1{
+    font-size: 40px;
+  }
+
+  .planet-data > h2{
+    font-size: 24px;
+  }
+  
+  .planet-data > p{
+    font-size: 20px;
+  }
+
+  .character-card li{
+    font-size: 26px;
+  }
+  
+  .character-card b{
+    font-size: 20px;
+  }
+  
+  .character-card p{
+    font-size: 22px;
+  }
+}
