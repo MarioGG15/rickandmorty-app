@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import axios from 'axios'
 import CharacterCard from './components/CharacterCard'
+import imagen1 from "./assets/images/Imagen1.png"
 
 function App() {
   const [ramLocation, setRamLocation] = useState({})
@@ -27,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <div className='header-container'>
-        <img src="/src/assets/images/Imagen1.png" alt="" className='banner-header' />
+        <img src={imagen1} alt="" className='banner-header' />
         <div className='search-container'>
           <input type="text" placeholder='Type a location ID' value={searchId} onChange={e => setSearchId(e.target.value)} />
           <button onClick={searchLocation} >Search</button>
